@@ -55,6 +55,17 @@ th.large-12.horizontal-rule {
         color: $white;
         font-size: 10px;
     }
+
+    #top-socials {
+        padding-top: 5px;
+        padding-bottom: 0;
+        padding-right: 0;
+
+        a {
+            display: inline-block;
+            margin-left: 10px;
+        }
+    }
 }
 
 @media only screen and (max-width: 596px) {
