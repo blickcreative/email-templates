@@ -65,7 +65,7 @@ th.large-12.horizontal-rule {
         padding-bottom: 0;
         padding-right: 0;
 
-        a {
+        a, tweet, fblike {
             display: inline-block;
             margin-left: 10px;
         }
@@ -74,12 +74,7 @@ th.large-12.horizontal-rule {
 
 @media only screen and (max-width: 596px) {
     #top-bar { 
-/*         th.small-12 {
-            padding-bottom: 0!important;
-            th.menu-item {
-                 padding-top: 0!important;
-            }
-        } */
+
     }
 }
 
