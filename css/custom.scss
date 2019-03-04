@@ -55,7 +55,11 @@ th.large-12.horizontal-rule {
 #top-bar {
     background-color: $lime;
 
-    .menu-item, .menu-item a {
+    .menu-item, 
+    .menu-item a,
+    .menu-item webversion,
+    .menu-item preferences,
+    .menu-item unsubscribe {
         color: $white;
         font-size: 10px;
     }
@@ -65,16 +69,15 @@ th.large-12.horizontal-rule {
         padding-bottom: 0;
         padding-right: 0;
 
-        a, tweet, fblike {
+        a, tweet, fblike, forwardtoafriend {
             display: inline-block;
             margin-left: 10px;
         }
     }
-}
 
-@media only screen and (max-width: 596px) {
-    #top-bar { 
-
+    .pipe {
+        padding-left: 5px;
+        padding-right: 5px;
     }
 }
 

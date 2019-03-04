@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width" />
   <title>Title</title>
   <link rel="stylesheet" href="css/foundation-emails.css" />
-  <link rel="stylesheet" href="css/custom_styles.css" />
+  <link rel="stylesheet" href="css/custom.css" />
 </head>
 <body>
   <table class="body" data-made-with-foundation>
@@ -21,9 +21,9 @@
           </table>
           <table class="container header">
             <tbody>
-              <!-- top bar start -->
               <tr>
-                <td>
+                <td><!-- opening td for main content area -->
+                  <!-- top bar start -->
                   <table class="row" id="top-bar">
                     <tbody>
                       <tr> 
@@ -44,7 +44,7 @@
                               <td>
                                 <table>
                                   <tr>
-                                    <th class="menu-item"><webversion>Web version</webversion> | <preferences>Update preferences</preferences> | <unsubscribe>Unsubscribe</unsubscribe></th>
+                                    <th class="menu-item"><webversion>Web version</webversion><span class="pipe">|</span><preferences>Update preferences</preferences><span class="pipe">|</span><unsubscribe>Unsubscribe</unsubscribe></th>
                                   </tr>
                                 </table>
                               </td>
@@ -64,9 +64,9 @@
                                         <tweet tweeturl="https://twitter.com/">
                                           <img src="https://email-images.blickdevone.com.au/iconfinder_twitter_313466.png" alt="Twitter icon."/>
                                         </tweet>
-                                        <a href="mailto:info@blickcreative.com.au">
+                                        <forwardtoafriend>
                                           <img src="https://email-images.blickdevone.com.au/iconfinder_Mail_194919.png" alt="Mail icon." />
-                                        </a>
+                                        </forwardtoafriend>
                                       </th>  
                                     </tr>
                                   </table>
@@ -77,99 +77,14 @@
                       </tr>
                     </tbody>
                   </table>
-                </td>
-              </tr>
-              <!-- top bar end -->
-              <!-- full width image banner start -->
-              <tr>
-                <td>
-                    <table class="spacer">
-                      <tbody>
-                        <tr>
-                          <td height="16px" style="font-size:16px;line-height:16px;"></td>
-                        </tr>
-                      </tbody>
-                    </table>
-                    <table class="row">
-                      <tbody>
-                        <tr>
-                          <th class="small-12 large-12 columns first last">
-                            <table>
-                              <tbody>
-                                <tr>
-                                  <th>
-                                    <center data-parsed=""> 
-                                      <img editable="true" src="http://placehold.it/548x200" width="548" align="center" class="float-center"> 
-                                    </center>
-                                  </th>
-                                </tr>
-                              </tbody>
-                            </table>
-                          </th>
-                        </tr>
-                      </tbody>
-                  </table>
-                </td>
-              </tr>
-              <!-- full width image banner end -->
-              <!-- full width heading start -->
-              <tr>
-                <td>
-                    <table class="spacer">
-                      <tbody>
-                        <tr>
-                          <td height="16px"></td>
-                        </tr>
-                      </tbody>
-                    </table>
-                    <table class="row">
-                      <tbody>
-                        <tr>
-                          <th class="small-12 large-12 columns first last">
-                            <table>
-                              <tbody>
-                                <tr>
-                                  <th>
-                                    <h2 class="heading-brand"><singleline label='Section heading.'>Full Width Heading Repeater</singleline></h2>
-                                  </th>
-                                </tr>
-                            </tbody></table>
-                          </th>
-                        </tr>
-                      </tbody>
-                    </table>
-                    <table class="spacer">
-                        <tbody>
-                          <tr>
-                            <td height="6px"></td>
-                        </tr>
-                      </tbody>
-                    </table>
-                </td>
-              </tr>
-              <!-- full width heading end -->
-              <!-- horizontal repeater start -->
-              <tr>
-                <td>
-                  <table class="row">
-                    <tbody>
-                      <tr>
-                        <th class="small-12 large-12 columns horizontal-rule">
-                          <hr class="horizontal-rule-line"/>
-                        </th>
-                      </tr>
-                    </tbody>
-                  </table>
-                </td>
-              </tr>
-              <!-- horizontal repeater end -->
-              <!-- Text with full width image start -->
-              <tr>
-                  <td>
+                  <!-- top bar end -->
+                  <!-- full width heading start -->
+                  <repeater> 
+                    <layout label="Full width heading"> 
                       <table class="spacer">
                         <tbody>
                           <tr>
-                            <td height="16px" style="font-size:16px;line-height:16px;"></td>
+                            <td height="30px"></td>
                           </tr>
                         </tbody>
                       </table>
@@ -181,9 +96,7 @@
                                 <tbody>
                                   <tr>
                                     <th>
-                                      <center data-parsed=""> 
-                                        <img editable="true" src="http://placehold.it/548x200" width="548" align="center" class="float-center"> 
-                                      </center>
+                                      <h2 class="heading-brand"><singleline repeatertitle='true' label='Section heading.'>Full Width Heading Repeater</singleline></h2>
                                     </th>
                                   </tr>
                                 </tbody>
@@ -191,8 +104,75 @@
                             </th>
                           </tr>
                         </tbody>
-                    </table>
-                    <table class="row">
+                      </table>
+                      <table class="spacer">
+                          <tbody>
+                            <tr>
+                              <td height="6px"></td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </layout>
+                    <!-- full width heading end -->
+                    <!-- full width image banner start -->
+                    <layout label="Full-width image banner"> 
+                        <table class="spacer">
+                          <tbody>
+                            <tr>
+                              <td height="16px" style="font-size:16px;line-height:16px;"></td>
+                            </tr>
+                          </tbody>
+                        </table>
+                        <table class="row">
+                          <tbody>
+                            <tr>
+                              <th class="small-12 large-12 columns first last">
+                                <table>
+                                  <tbody>
+                                    <tr>
+                                      <th>
+                                        <center data-parsed=""> 
+                                          <img editable="true" src="http://placehold.it/548x200" width="548" align="center" class="float-center"> 
+                                        </center>
+                                      </th>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                              </th>
+                            </tr>
+                          </tbody>
+                      </table>
+                    </layout>
+                    <!-- full width image banner end -->
+                    <!-- Text with full width image start -->
+                    <layout label="Text with full-width image banner"> 
+                      <table class="spacer">
+                        <tbody>
+                          <tr>
+                            <td height="16px" style="font-size:16px;line-height:16px;"></td>
+                          </tr>
+                        </tbody>
+                      </table>
+                      <table class="row">
+                          <tbody>
+                            <tr>
+                              <th class="small-12 large-12 columns first last">
+                                <table>
+                                  <tbody>
+                                    <tr>
+                                      <th>
+                                        <center data-parsed=""> 
+                                          <img editable="true" src="http://placehold.it/548x200" width="548" align="center" class="float-center"> 
+                                        </center>
+                                      </th>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                              </th>
+                            </tr>
+                          </tbody>
+                      </table>
+                      <table class="row">
                         <tbody>
                           <tr>
                             <th class="small-12 large-12 columns first last">
@@ -200,7 +180,7 @@
                                 <tbody>
                                   <tr>
                                     <td>
-                                       <div editable="true" class="editable-content"> 
+                                        <div editable="true" class="editable-content"> 
                                         <h6 class="heading-brand"><multiline label="Content heading.">Text with a full-width image repeater</multiline></h6>
                                         <p><multiline label="Content text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc a eros in est posuere efficitur. In hac habitasse platea dictumst. Aenean tempor tristique vestibulum. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Maecenas nec mauris finibus, ultricies ex eu..</multiline></p>
                                         <p><multiline label="Content text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc a eros in est posuere efficitur. In hac habitasse platea dictumst. Aenean tempor tristique vestibulum. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Maecenas nec mauris finibus, ultricies ex eu..</multiline></p>
@@ -212,627 +192,520 @@
                             </th>
                           </tr>
                         </tbody>
-                    </table>
-                  </td>
-                </tr>
-              <!-- Text with full width image end -->
-              <!-- horizontal repeater red start -->
-              <tr>
-                <td>
-                  <table class="row">
-                    <tbody>
-                      <tr>
-                        <th class="small-12 large-12 columns horizontal-rule">
-                          <hr class="horizontal-rule-line-red"/>
-                        </th>
-                      </tr>
-                    </tbody>
-                  </table>
-                </td>
-              </tr>
-              <!-- horizontal repeater red end -->
-              <!-- Two column left text with right image repeater start -->
-              <tr>
-                <td>
-                  <table class="row">
-                    <tbody>
-                      <tr>
-                        <th class="small-6 large-6 columns first">
-                          <table class="spacer">
-                            <tbody>
-                              <tr>
-                                <td height="16px" style="font-size:16px;line-height:16px;"></td>
-                              </tr>
-                            </tbody>
-                          </table>
-                          <table>
-                            <tbody>
-                              <tr>
-                                <td>
-                                  <div class="editable-content"> 
-                                    <h6 class="heading-brand"><multiline label="Content heading.">Left text with right image repeater</multiline></h6>
-                                    <p><multiline label="Content text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod eum eius numquam sint dolore voluptatibus beatae ab ad, dignissimos fugiat? Nisi odio commodi debitis eveniet tenetur provident aliquid tempora placeat.</multiline></p>
-                                    <p><multiline label="Content text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod eum eius numquam sint dolore voluptatibus beatae ab ad, dignissimos fugiat? Nisi odio commodi debitis eveniet tenetur provident aliquid tempora placeat.</multiline></p>
-                                  </div>
-                                </td>
-                              </tr>
-                            </tbody>
-                          </table>
-                        </th>
-                        <th class="small-6 large-6 columns last">
-                          <table class="spacer">
-                            <tbody>
-                              <tr>
-                                <td height="16px" style="font-size:16px;line-height:16px;"></td>
-                              </tr>
-                            </tbody>
-                          </table>
-                          <table>
-                            <tbody>
-                              <tr>
-                                <th>
-                                  <center data-parsed=""> 
-                                     <img editable="true" src="http://placehold.it/265x200" width="265" align="center" class="float-center"> 
-                                  </center>
-                                </th>
-                              </tr>
-                            </tbody>
-                          </table>
-                        </th>
-                      </tr>
-                    </tbody>
-                  </table>
-                </td>
-              </tr>
-              <!-- Two column left text with right image repeater end -->
-              <!-- horizontal repeater red start -->
-              <tr>
-                <td>
-                  <table class="row">
-                    <tbody>
-                      <tr>
-                        <th class="small-12 large-12 columns horizontal-rule">
-                          <hr class="horizontal-rule-line-red"/>
-                        </th>
-                      </tr>
-                    </tbody>
-                  </table>
-                </td>
-              </tr>
-              <!-- horizontal repeater red end -->
-              <!-- Two column right text with left image repeater start -->
-              <tr>
-                <td>
-                  <table class="row">
-                    <tbody>
-                      <tr>
-                        <th class="small-6 large-6 columns first">
-                          <table class="spacer">
-                            <tbody>
-                              <tr>
-                                <td height="16px" style="font-size:16px;line-height:16px;"></td>
-                              </tr>
-                            </tbody>
-                          </table>
-                          <table>
-                            <tbody>
-                              <tr>
-                                <th>
-                                  <center data-parsed=""> 
-                                     <img editable="true" src="http://placehold.it/265x200" width="265" align="center" class="float-center"> 
-                                  </center>
-                                </th>
-                              </tr>
-                            </tbody>
-                        </table>
-                      </th>
-                      <th class="small-6 large-6 columns last">
-                        <table class="spacer">
+                      </table>
+                    </layout>
+                    <!-- Text with full width image end -->
+                    <!-- horizontal repeater start -->
+                    <layout label="Horizontal-rule">
+                      <table class="row">
+                        <tbody>
+                          <tr>
+                            <th class="small-12 large-12 columns horizontal-rule">
+                              <singleline><hr class="horizontal-rule-line"/></singleline>
+                            </th>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </layout>
+                    <!-- horizontal repeater end -->
+                    <!--***  UPDATED AFTER HERE *** -->
+                    <!-- Two column left text with right image repeater start -->
+                    <layout label="Two column left text with right image">
+                      <table class="row">
+                        <tbody>
+                          <tr>
+                            <th class="small-6 large-6 columns first">
+                              <table class="spacer">
+                                <tbody>
+                                  <tr>
+                                    <td height="16px" style="font-size:16px;line-height:16px;"></td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                              <table>
+                                <tbody>
+                                  <tr>
+                                    <td>
+                                      <div class="editable-content"> 
+                                        <h6 class="heading-brand"><multiline label="Content heading.">Left text with right image repeater</multiline></h6>
+                                        <p><multiline label="Content text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod eum eius numquam sint dolore voluptatibus beatae ab ad, dignissimos fugiat? Nisi odio commodi debitis eveniet tenetur provident aliquid tempora placeat.</multiline></p>
+                                        <p><multiline label="Content text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod eum eius numquam sint dolore voluptatibus beatae ab ad, dignissimos fugiat? Nisi odio commodi debitis eveniet tenetur provident aliquid tempora placeat.</multiline></p>
+                                      </div>
+                                    </td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </th>
+                            <th class="small-6 large-6 columns last">
+                              <table class="spacer">
+                                <tbody>
+                                  <tr>
+                                    <td height="16px" style="font-size:16px;line-height:16px;"></td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                              <table>
+                                <tbody>
+                                  <tr>
+                                    <th>
+                                      <center data-parsed=""> 
+                                          <img editable="true" src="http://placehold.it/265x200" width="265" align="center" class="float-center"> 
+                                      </center>
+                                    </th>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </th>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </layout>
+                      <!-- Two column left text with right image repeater end -->
+                      <!-- Two column right text with left image repeater start -->
+                    <layout label="Two column right text with left image">
+                      <table class="row">
+                        <tbody>
+                          <tr>
+                            <th class="small-6 large-6 columns first">
+                              <table class="spacer">
+                                <tbody>
+                                  <tr>
+                                    <td height="16px" style="font-size:16px;line-height:16px;"></td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                              <table>
+                                <tbody>
+                                  <tr>
+                                    <th>
+                                      <center data-parsed=""> 
+                                        <img editable="true" src="http://placehold.it/265x200" width="265" align="center" class="float-center"> 
+                                      </center>
+                                    </th>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </th>
+                            <th class="small-6 large-6 columns last">
+                              <table class="spacer">
+                                <tbody>
+                                  <tr>
+                                    <td height="16px" style="font-size:16px;line-height:16px;"></td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                              <table>
+                                <tbody>
+                                  <tr>
+                                    <td>
+                                      <div class="editable-content"> 
+                                        <h6 class="heading-brand"><multiline label="Content heading.">Right text with left image repeater</multiline></h6>
+                                        <p><multiline label="Content text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod eum eius numquam sint dolore voluptatibus beatae ab ad, dignissimos fugiat? Nisi odio commodi debitis eveniet tenetur provident aliquid tempora placeat.</multiline></p>
+                                        <p><multiline label="Content text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod eum eius numquam sint dolore voluptatibus beatae ab ad, dignissimos fugiat? Nisi odio commodi debitis eveniet tenetur provident aliquid tempora placeat.</multiline></p>
+                                      </div>
+                                    </td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </th>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </layout>
+                    <!-- Two column right text with left image repeater start -->
+                    <!-- Two column Left and Right text repeater start -->
+                    <layout label="Two column Left and Right text">  
+                      <table class="row">
                           <tbody>
                             <tr>
-                              <td height="16px" style="font-size:16px;line-height:16px;"></td>
-                            </tr>
-                          </tbody>
-                        </table>
-                        <table>
-                          <tbody>
+                              <th class="small-6 large-6 columns first">
+                                <table class="spacer">
+                                  <tbody>
+                                    <tr>
+                                      <td height="16px" style="font-size:16px;line-height:16px;"></td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                                <table>
+                                  <tbody>
+                                    <tr>
+                                      <td>
+                                        <div class="editable-content"> 
+                                          <h6 class="heading-brand"><multiline label="Content heading">Left and Right text repeater</multiline></h6>
+                                          <p><multiline label="Content text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod eum eius numquam sint dolore voluptatibus beatae ab ad, dignissimos fugiat? Nisi odio commodi debitis eveniet tenetur provident aliquid tempora placeat.</multiline></p>
+                                          <p><multiline label="Content text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod eum eius numquam sint dolore voluptatibus beatae ab ad, dignissimos fugiat? Nisi odio commodi debitis eveniet tenetur provident aliquid tempora placeat.</multiline></p>
+                                        </div>
+                                      </td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                              </th>
+                              <th class="small-6 large-6 columns last">
+                                <table class="spacer">
+                                  <tbody>
+                                    <tr>
+                                      <td height="16px" style="font-size:16px;line-height:16px;"></td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                                <table>
+                                  <tbody>
+                                    <tr>
+                                      <td>
+                                        <div class="editable-content"> 
+                                          <h6 class="heading-brand"><multiline label="Content heading">Left and Right text repeater</multiline></h6>
+                                          <p><multiline label="Content text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod eum eius numquam sint dolore voluptatibus beatae ab ad, dignissimos fugiat? Nisi odio commodi debitis eveniet tenetur provident aliquid tempora placeat.</multiline></p>
+                                          <p><multiline label="Content text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod eum eius numquam sint dolore voluptatibus beatae ab ad, dignissimos fugiat? Nisi odio commodi debitis eveniet tenetur provident aliquid tempora placeat.</multiline></p>
+                                        </div>
+                                    </td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </th>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </layout>
+                    <!-- Two column Left and Right text repeater end -->
+                    <!-- Two column right and left image repeater start -->
+                    <layout label="Two column right and left image"> 
+                      <table class="row">
+                        <tbody>
+                          <tr>
+                            <th class="small-6 large-6 columns first">
+                              <table class="spacer">
+                                <tbody>
+                                  <tr>
+                                    <td height="16px" style="font-size:16px;line-height:16px;"></td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                              <table>
+                                <tbody>
+                                  <tr>
+                                    <th>
+                                      <center data-parsed=""> 
+                                        <img editable="true" src="http://placehold.it/265x200" width="265" align="center" class="float-center"> 
+                                      </center>
+                                    </th>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </th>
+                            <th class="small-6 large-6 columns last">
+                              <table class="spacer">
+                                <tbody>
+                                  <tr>
+                                    <td height="16px" style="font-size:16px;line-height:16px;"></td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                              <table>
+                                <tbody>
+                                  <tr>
+                                    <th>
+                                      <center data-parsed=""> 
+                                        <img editable="true" src="http://placehold.it/265x200" width="265" align="center" class="float-center"> 
+                                      </center>
+                                    </th>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </th>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </layout>
+                    <!-- Two column right and left image repeater end -->
+                    <!-- Two column right and left text image repeater start -->
+                    <layout label="Two column right and left text image">
+                      <table class="row">
+                        <tbody>
+                          <tr>
+                            <th class="small-6 large-6 columns first">
+                              <table class="spacer">
+                                <tbody>
+                                  <tr>
+                                    <td height="16px" style="font-size:16px;line-height:16px;"></td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                              <table>
+                                <tbody>
+                                  <tr>
+                                    <th>
+                                      <center data-parsed=""> 
+                                        <img editable="true" src="http://placehold.it/265x200" width="265" align="center" class="float-center"> 
+                                      </center>
+                                    </th>
+                                  </tr>
+                                </tbody>
+                              </table>
+                              <table class="spacer">
+                                <tbody>
+                                  <tr>
+                                    <td height="16px" style="font-size:16px;line-height:16px;"></td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                              <table>
+                                  <tbody>
+                                    <tr>
+                                      <td>
+                                        <div class="editable-content"> 
+                                          <h6 class="heading-brand"><multiline label="Content heading">Left and Right text repeater</multiline></h6>
+                                          <p><multiline label="Content text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod eum eius numquam sint dolore voluptatibus beatae ab ad, dignissimos fugiat? Nisi odio commodi debitis eveniet tenetur provident aliquid tempora placeat.</multiline></p>
+                                          <p><multiline label="Content text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod eum eius numquam sint dolore voluptatibus beatae ab ad, dignissimos fugiat? Nisi odio commodi debitis eveniet tenetur provident aliquid tempora placeat.</multiline></p>
+                                        </div>
+                                    </td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </th>
+                            <th class="small-6 large-6 columns last">
+                                <table class="spacer">
+                                  <tbody>
+                                    <tr>
+                                      <td height="16px" style="font-size:16px;line-height:16px;"></td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                                <table>
+                                  <tbody>
+                                    <tr>
+                                      <th>
+                                        <center data-parsed=""> 
+                                          <img editable="true" src="http://placehold.it/265x200" width="265" align="center" class="float-center"> 
+                                        </center>
+                                      </th>
+                                    </tr>
+                                  </tbody>
+                              </table>
+                              <table class="spacer">
+                                <tbody>
+                                  <tr>
+                                    <td height="16px" style="font-size:16px;line-height:16px;"></td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                              <table>
+                                  <tbody>
+                                    <tr>
+                                      <td>
+                                        <div class="editable-content"> 
+                                          <h6 class="heading-brand"><multiline label="Content heading">Left and Right text repeater</multiline></h6>
+                                          <p><multiline label="Content text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod eum eius numquam sint dolore voluptatibus beatae ab ad, dignissimos fugiat? Nisi odio commodi debitis eveniet tenetur provident aliquid tempora placeat.</multiline></p>
+                                          <p><multiline label="Content text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod eum eius numquam sint dolore voluptatibus beatae ab ad, dignissimos fugiat? Nisi odio commodi debitis eveniet tenetur provident aliquid tempora placeat.</multiline></p>
+                                        </div>
+                                    </td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </th>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </layout>
+                    <!-- Two column right and left image repeater end -->
+                    <!-- Three columns image repeater start -->
+                    <layout label="Three column images"> 
+                      <table class="row">
+                        <tbody>
+                          <tr>
+                            <th class="small-4 large-4 columns first">
+                              <table class="spacer">
+                                <tbody>
+                                    <tr>
+                                      <td height="16px" style="font-size:16px;line-height:16px;"></td>
+                                    </tr>
+                                  </tbody>
+                              </table>
+                              <table>
+                                <tbody>
+                                  <tr>
+                                    <th>
+                                      <center data-parsed=""> 
+                                        <img editable="true" src="http://placehold.it/172x100" width="172" align="center" class="float-center"> 
+                                      </center>
+                                    </th>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </th>
+                            <th class="small-4 large-4 columns">
+                              <table class="spacer">
+                                <tbody>
+                                  <tr>
+                                    <td height="16px" style="font-size:16px;line-height:16px;"></td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                              <table>
+                                <tbody>
+                                  <tr>
+                                    <th>
+                                      <center data-parsed=""> 
+                                        <img editable="true" src="http://placehold.it/172x100" width="172" align="center" class="float-center"> 
+                                      </center>
+                                    </th>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </th>
+                            <th class="small-4 large-4 columns last">
+                                <table class="spacer">
+                                  <tbody>
+                                    <tr>
+                                      <td height="16px" style="font-size:16px;line-height:16px;"></td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                                <table>
+                                  <tbody>
+                                    <tr>
+                                      <th>
+                                        <center data-parsed=""> 
+                                          <img editable="true" src="http://placehold.it/172x100" width="172" align="center" class="float-center"> 
+                                        </center>
+                                      </th>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                              </th>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </layout>
+                    <!-- Three columns image repeater end -->
+                    <!-- Three columns image and text repeater start -->
+                    <layout label="Three columns image and text"> 
+                      <table class="row three-column-content">
+                        <tbody>
                             <tr>
-                              <td>
-                                <div class="editable-content"> 
-                                  <h6 class="heading-brand"><multiline label="Content heading.">Right text with left image repeater</multiline></h6>
-                                  <p><multiline label="Content text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod eum eius numquam sint dolore voluptatibus beatae ab ad, dignissimos fugiat? Nisi odio commodi debitis eveniet tenetur provident aliquid tempora placeat.</multiline></p>
-                                  <p><multiline label="Content text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod eum eius numquam sint dolore voluptatibus beatae ab ad, dignissimos fugiat? Nisi odio commodi debitis eveniet tenetur provident aliquid tempora placeat.</multiline></p>
-                                </div>
-                              </td>
-                            </tr>
-                          </tbody>
-                        </table>
-                      </th>
-                    </tr>
-                  </tbody>
-                </table>
-              </td>
-            </tr>
-            <!-- Two column right text with left image repeater start -->
-              <!-- horizontal repeater red start -->
-              <tr>
-                <td>
-                  <table class="row">
-                    <tbody>
-                      <tr>
-                        <th class="small-12 large-12 columns horizontal-rule">
-                          <hr class="horizontal-rule-line-red"/>
-                        </th>
-                      </tr>
-                    </tbody>
-                  </table>
-                </td>
-              </tr>
-              <!-- horizontal repeater red end -->            
-              <!-- Two column Left and Right text repeater start -->
-              <tr>
-                <td>
-                  <table class="row">
-                      <tbody>
-                        <tr>
-                          <th class="small-6 large-6 columns first">
-                            <table class="spacer">
-                              <tbody>
-                                <tr>
-                                  <td height="16px" style="font-size:16px;line-height:16px;"></td>
-                                </tr>
-                              </tbody>
-                            </table>
-                            <table>
-                              <tbody>
-                                <tr>
-                                  <td>
-                                    <div class="editable-content"> 
-                                      <h6 class="heading-brand"><multiline label="Content heading">Left and Right text repeater</multiline></h6>
-                                      <p><multiline label="Content text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod eum eius numquam sint dolore voluptatibus beatae ab ad, dignissimos fugiat? Nisi odio commodi debitis eveniet tenetur provident aliquid tempora placeat.</multiline></p>
-                                      <p><multiline label="Content text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod eum eius numquam sint dolore voluptatibus beatae ab ad, dignissimos fugiat? Nisi odio commodi debitis eveniet tenetur provident aliquid tempora placeat.</multiline></p>
-                                    </div>
-                                  </td>
-                                </tr>
-                              </tbody>
-                            </table>
-                          </th>
-                          <th class="small-6 large-6 columns last">
-                            <table class="spacer">
-                              <tbody>
-                                <tr>
-                                  <td height="16px" style="font-size:16px;line-height:16px;"></td>
-                                </tr>
-                              </tbody>
-                            </table>
-                            <table>
-                              <tbody>
-                                <tr>
-                                  <td>
-                                    <div class="editable-content"> 
-                                      <h6 class="heading-brand"><multiline label="Content heading">Left and Right text repeater</multiline></h6>
-                                      <p><multiline label="Content text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod eum eius numquam sint dolore voluptatibus beatae ab ad, dignissimos fugiat? Nisi odio commodi debitis eveniet tenetur provident aliquid tempora placeat.</multiline></p>
-                                      <p><multiline label="Content text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod eum eius numquam sint dolore voluptatibus beatae ab ad, dignissimos fugiat? Nisi odio commodi debitis eveniet tenetur provident aliquid tempora placeat.</multiline></p>
-                                    </div>
-                                </td>
-                              </tr>
-                            </tbody>
-                          </table>
-                        </th>
-                      </tr>
-                    </tbody>
-                  </table>
-                </td>
-              </tr>
-              <!-- Two column Left and Right text repeater end -->
-              <!-- horizontal repeater red start -->
-              <tr>
-                <td>
-                  <table class="row">
-                    <tbody>
-                      <tr>
-                        <th class="small-12 large-12 columns horizontal-rule">
-                          <hr class="horizontal-rule-line-red"/>
-                        </th>
-                      </tr>
-                    </tbody>
-                  </table>
-                </td>
-              </tr>
-              <!-- horizontal repeater red end -->
-              <!-- Two column right and left image repeater start -->
-              <tr>
-                  <td>
-                    <table class="row">
-                      <tbody>
-                        <tr>
-                          <th class="small-6 large-6 columns first">
-                            <table class="spacer">
-                              <tbody>
-                                <tr>
-                                  <td height="16px" style="font-size:16px;line-height:16px;"></td>
-                                </tr>
-                              </tbody>
-                            </table>
-                            <table>
-                              <tbody>
-                                <tr>
-                                  <th>
-                                    <center data-parsed=""> 
-                                      <img editable="true" src="http://placehold.it/265x200" width="265" align="center" class="float-center"> 
-                                    </center>
-                                  </th>
-                                </tr>
-                              </tbody>
-                          </table>
-                        </th>
-                        <th class="small-6 large-6 columns last">
-                          <table class="spacer">
-                            <tbody>
-                              <tr>
-                                <td height="16px" style="font-size:16px;line-height:16px;"></td>
-                              </tr>
-                            </tbody>
-                          </table>
-                          <table>
-                            <tbody>
-                              <tr>
-                                <th>
-                                  <center data-parsed=""> 
-                                    <img editable="true" src="http://placehold.it/265x200" width="265" align="center" class="float-center"> 
-                                  </center>
-                                </th>
-                              </tr>
-                            </tbody>
-                          </table>
-                        </th>
-                      </tr>
-                    </tbody>
-                  </table>
-                </td>
-              </tr>
-              <!-- Two column right and left image repeater end -->
-              <!-- horizontal repeater red start -->
-              <tr>
-                <td>
-                  <table class="row">
-                    <tbody>
-                      <tr>
-                        <th class="small-12 large-12 columns horizontal-rule">
-                          <hr class="horizontal-rule-line-red"/>
-                        </th>
-                      </tr>
-                    </tbody>
-                  </table>
-                </td>
-              </tr>
-              <!-- horizontal repeater red end -->
-              <!-- Two column right and left text image repeater start -->
-              <tr>
-                  <td>
-                    <table class="row">
-                      <tbody>
-                        <tr>
-                          <th class="small-6 large-6 columns first">
-                            <table class="spacer">
-                              <tbody>
-                                <tr>
-                                  <td height="16px" style="font-size:16px;line-height:16px;"></td>
-                                </tr>
-                              </tbody>
-                            </table>
-                            <table>
-                              <tbody>
-                                <tr>
-                                  <th>
-                                    <center data-parsed=""> 
-                                      <img editable="true" src="http://placehold.it/265x200" width="265" align="center" class="float-center"> 
-                                    </center>
-                                  </th>
-                                </tr>
-                              </tbody>
-                          </table>
-                          <table class="spacer">
-                            <tbody>
-                              <tr>
-                                <td height="16px" style="font-size:16px;line-height:16px;"></td>
-                              </tr>
-                            </tbody>
-                          </table>
-                          <table>
-                              <tbody>
-                                <tr>
-                                  <td>
-                                    <div class="editable-content"> 
-                                      <h6 class="heading-brand"><multiline label="Content heading">Left and Right text repeater</multiline></h6>
-                                      <p><multiline label="Content text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod eum eius numquam sint dolore voluptatibus beatae ab ad, dignissimos fugiat? Nisi odio commodi debitis eveniet tenetur provident aliquid tempora placeat.</multiline></p>
-                                      <p><multiline label="Content text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod eum eius numquam sint dolore voluptatibus beatae ab ad, dignissimos fugiat? Nisi odio commodi debitis eveniet tenetur provident aliquid tempora placeat.</multiline></p>
-                                    </div>
-                                </td>
-                              </tr>
-                            </tbody>
-                          </table>
-                        </th>
-                        <th class="small-6 large-6 columns last">
-                            <table class="spacer">
-                              <tbody>
-                                <tr>
-                                  <td height="16px" style="font-size:16px;line-height:16px;"></td>
-                                </tr>
-                              </tbody>
-                            </table>
-                            <table>
-                              <tbody>
-                                <tr>
-                                  <th>
-                                    <center data-parsed=""> 
-                                      <img editable="true" src="http://placehold.it/265x200" width="265" align="center" class="float-center"> 
-                                     </center>
-                                  </th>
-                                </tr>
-                              </tbody>
-                          </table>
-                          <table class="spacer">
-                            <tbody>
-                              <tr>
-                                <td height="16px" style="font-size:16px;line-height:16px;"></td>
-                              </tr>
-                            </tbody>
-                          </table>
-                          <table>
-                              <tbody>
-                                <tr>
-                                  <td>
-                                    <div class="editable-content"> 
-                                      <h6 class="heading-brand"><multiline label="Content heading">Left and Right text repeater</multiline></h6>
-                                      <p><multiline label="Content text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod eum eius numquam sint dolore voluptatibus beatae ab ad, dignissimos fugiat? Nisi odio commodi debitis eveniet tenetur provident aliquid tempora placeat.</multiline></p>
-                                      <p><multiline label="Content text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod eum eius numquam sint dolore voluptatibus beatae ab ad, dignissimos fugiat? Nisi odio commodi debitis eveniet tenetur provident aliquid tempora placeat.</multiline></p>
-                                    </div>
-                                </td>
-                              </tr>
-                            </tbody>
-                          </table>
-                        </th>
-                      </tr>
-                    </tbody>
-                  </table>
-                </td>
-              </tr>
-              <!-- Two column right and left image repeater end -->
-              <!-- horizontal repeater red start -->
-              <tr>
-                <td>
-                  <table class="row">
-                    <tbody>
-                      <tr>
-                        <th class="small-12 large-12 columns horizontal-rule">
-                          <hr class="horizontal-rule-line-red"/>
-                        </th>
-                      </tr>
-                    </tbody>
-                  </table>
-                </td>
-              </tr>
-              <!-- horizontal repeater red end -->
-              <!-- Three columns image repeater start -->
-              <tr>
-                  <td>
-                    <table class="row">
-                      <tbody>
-                        <tr>
-                          <th class="small-4 large-4 columns first">
-                            <table class="spacer">
-                              <tbody>
-                                <tr>
-                                  <td height="16px" style="font-size:16px;line-height:16px;"></td>
-                                </tr>
-                              </tbody>
-                            </table>
-                            <table>
-                              <tbody>
-                                <tr>
-                                  <th>
-                                    <center data-parsed=""> 
-                                      <img editable="true" src="http://placehold.it/172x100" width="172" align="center" class="float-center"> 
-                                    </center>
-                                  </th>
-                                </tr>
-                              </tbody>
-                          </table>
-                        </th>
-                        <th class="small-4 large-4 columns">
-                          <table class="spacer">
-                            <tbody>
-                              <tr>
-                                <td height="16px" style="font-size:16px;line-height:16px;"></td>
-                              </tr>
-                            </tbody>
-                          </table>
-                          <table>
-                            <tbody>
-                              <tr>
-                                <th>
-                                  <center data-parsed=""> 
-                                     <img editable="true" src="http://placehold.it/172x100" width="172" align="center" class="float-center"> 
-                                  </center>
-                                </th>
-                              </tr>
-                            </tbody>
-                          </table>
-                        </th>
-                        <th class="small-4 large-4 columns last">
-                            <table class="spacer">
-                              <tbody>
-                                <tr>
-                                  <td height="16px" style="font-size:16px;line-height:16px;"></td>
-                                </tr>
-                              </tbody>
-                            </table>
-                            <table>
-                              <tbody>
-                                <tr>
-                                  <th>
-                                    <center data-parsed=""> 
-                                      <img editable="true" src="http://placehold.it/172x100" width="172" align="center" class="float-center"> 
-                                    </center>
-                                  </th>
-                                </tr>
-                              </tbody>
-                            </table>
-                          </th>
-                      </tr>
-                    </tbody>
-                  </table>
-                </td>
-              </tr>
-              <!-- Three columns image repeater end -->
-              <!-- horizontal repeater red start -->
-              <tr>
-                <td>
-                  <table class="row">
-                    <tbody>
-                      <tr>
-                        <th class="small-12 large-12 columns horizontal-rule">
-                          <hr class="horizontal-rule-line-red"/>
-                        </th>
-                      </tr>
-                    </tbody>
-                  </table>
-                </td>
-              </tr>
-              <!-- horizontal repeater red end -->
-              <!-- Three columns image repeater start -->
-              <tr>
-                  <td>
-                    <table class="row three-column-content">
-                      <tbody>
-                        <tr>
-                          <th class="small-4 large-4 columns first">
-                            <table class="spacer">
-                              <tbody>
-                                <tr>
-                                  <td height="16px" style="font-size:16px;line-height:16px;"></td>
-                                </tr>
-                              </tbody>
-                            </table>
-                            <table>
-                              <tbody>
-                                <tr>
-                                  <th>
-                                    <center data-parsed=""> 
-                                      <img editable="true" src="http://placehold.it/172x100" width="172" align="center" class="float-center">                  
-                                    </center>
-                                  </th>
-                                </tr>
-                                <tr>
-                                  <td>
-                                    <table class="spacer">
-                                        <tbody>
-                                          <tr>
-                                            <td height="16px" style="font-size:16px;line-height:16px;"></td>
-                                          </tr>
-                                        </tbody>
-                                      </table>
-                                  </td>
-                                </tr>
-                                <tr>
-                                  <td>
-                                    <div class="editable-content"> 
+                              <th class="small-4 large-4 columns first">
+                                <table class="spacer">
+                                  <tbody>
+                                    <tr>
+                                      <td height="16px" style="font-size:16px;line-height:16px;"></td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                                <table>
+                                  <tbody>
+                                    <tr>
+                                      <th>
+                                        <center data-parsed=""> 
+                                          <img editable="true" src="http://placehold.it/172x100" width="172" align="center" class="float-center">                  
+                                        </center>
+                                      </th>
+                                    </tr>
+                                    <tr>
+                                      <td>
+                                        <table class="spacer">
+                                            <tbody>
+                                              <tr>
+                                                <td height="16px" style="font-size:16px;line-height:16px;"></td>
+                                              </tr>
+                                            </tbody>
+                                          </table>
+                                      </td>
+                                    </tr>
+                                    <tr>
+                                      <td>
+                                        <div class="editable-content"> 
+                                            <h6 class="heading-brand"><multiline label="Content heading">3 column heading</multiline></h6>
+                                            <p><multiline label="Content text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod eum eius numquam sint dolore voluptatibus beatae ab ad, dignissimos fugiat? Nisi odio commodi debitis eveniet tenetur provident aliquid tempora placeat.</multiline></p>
+                                        </div>                                
+                                      </td>
+                                    </tr>
+                                </tbody>
+                              </table>
+                            </th>
+                            <th class="small-4 large-4 columns ">
+                                <table class="spacer">
+                                  <tbody>
+                                    <tr>
+                                      <td height="16px" style="font-size:16px;line-height:16px;"></td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                                <table>
+                                  <tbody>
+                                    <tr>
+                                      <th>
+                                        <center data-parsed=""> 
+                                          <img editable="true" src="http://placehold.it/172x100" width="172" align="center" class="float-center">
+                                        </center>
+                                      </th>
+                                    </tr>
+                                    <tr>
+                                      <td>
+                                        <table class="spacer">
+                                            <tbody>
+                                              <tr>
+                                                <td height="16px" style="font-size:16px;line-height:16px;"></td>
+                                              </tr>
+                                            </tbody>
+                                          </table>
+                                      </td>
+                                    </tr>
+                                    <tr>
+                                      <td>
+                                        <div class="editable-content"> 
+                                          <h6 class="heading-brand"><multiline label="Content heading">3 column heading</multiline></h6>
+                                          <p><multiline label="Content text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod eum eius numquam sint dolore voluptatibus beatae ab ad, dignissimos fugiat? Nisi odio commodi debitis eveniet tenetur provident aliquid tempora placeat.</multiline></p>
+                                        </div>                                   
+                                      </td>
+                                    </tr>
+                                </tbody>
+                              </table>
+                            </th>
+                            <th class="small-4 large-4 columns last">
+                              <table class="spacer">
+                                <tbody>
+                                  <tr>
+                                    <td height="16px" style="font-size:16px;line-height:16px;"></td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                              <table>
+                                <tbody>
+                                  <tr>
+                                    <th>
+                                      <center data-parsed=""> 
+                                        <img editable="true" src="http://placehold.it/172x100" width="172" align="center" class="float-center">
+                                      </center>
+                                    </th>
+                                  </tr>
+                                  <tr>
+                                    <td>
+                                      <table class="spacer">
+                                          <tbody>
+                                            <tr>
+                                              <td height="16px" style="font-size:16px;line-height:16px;"></td>
+                                            </tr>
+                                          </tbody>
+                                        </table>
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td>
+                                      <div class="editable-content"> 
                                         <h6 class="heading-brand"><multiline label="Content heading">3 column heading</multiline></h6>
                                         <p><multiline label="Content text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod eum eius numquam sint dolore voluptatibus beatae ab ad, dignissimos fugiat? Nisi odio commodi debitis eveniet tenetur provident aliquid tempora placeat.</multiline></p>
-                                    </div>                                
-                                  </td>
-                                </tr>
-                            </tbody>
-                          </table>
-                        </th>
-                        <th class="small-4 large-4 columns ">
-                            <table class="spacer">
-                              <tbody>
-                                <tr>
-                                  <td height="16px" style="font-size:16px;line-height:16px;"></td>
-                                </tr>
-                              </tbody>
-                            </table>
-                            <table>
-                              <tbody>
-                                <tr>
-                                  <th>
-                                    <center data-parsed=""> 
-                                      <img editable="true" src="http://placehold.it/172x100" width="172" align="center" class="float-center">
-                                    </center>
-                                  </th>
-                                </tr>
-                                <tr>
-                                  <td>
-                                    <table class="spacer">
-                                        <tbody>
-                                          <tr>
-                                            <td height="16px" style="font-size:16px;line-height:16px;"></td>
-                                          </tr>
-                                        </tbody>
-                                      </table>
-                                  </td>
-                                </tr>
-                                <tr>
-                                  <td>
-                                    <div class="editable-content"> 
-                                      <h6 class="heading-brand"><multiline label="Content heading">3 column heading</multiline></h6>
-                                      <p><multiline label="Content text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod eum eius numquam sint dolore voluptatibus beatae ab ad, dignissimos fugiat? Nisi odio commodi debitis eveniet tenetur provident aliquid tempora placeat.</multiline></p>
-                                    </div>                                   
-                                  </td>
-                                </tr>
-                            </tbody>
-                          </table>
-                        </th>
-                        <th class="small-4 large-4 columns last">
-                            <table class="spacer">
-                              <tbody>
-                                <tr>
-                                  <td height="16px" style="font-size:16px;line-height:16px;"></td>
-                                </tr>
-                              </tbody>
-                            </table>
-                            <table>
-                              <tbody>
-                                <tr>
-                                  <th>
-                                    <center data-parsed=""> 
-                                      <img editable="true" src="http://placehold.it/172x100" width="172" align="center" class="float-center">
-                                    </center>
-                                  </th>
-                                </tr>
-                                <tr>
-                                  <td>
-                                    <table class="spacer">
-                                        <tbody>
-                                          <tr>
-                                            <td height="16px" style="font-size:16px;line-height:16px;"></td>
-                                          </tr>
-                                        </tbody>
-                                      </table>
-                                  </td>
-                                </tr>
-                                <tr>
-                                  <td>
-                                    <div class="editable-content"> 
-                                      <h6 class="heading-brand"><multiline label="Content heading">3 column heading</multiline></h6>
-                                      <p><multiline label="Content text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod eum eius numquam sint dolore voluptatibus beatae ab ad, dignissimos fugiat? Nisi odio commodi debitis eveniet tenetur provident aliquid tempora placeat.</multiline></p>
-                                    </div>                                 
-                                  </td>
-                                </tr>
-                            </tbody>
-                          </table>
-                        </th>
-                      </tr>
-                    </tbody>
-                  </table>
-                </td>
-              </tr>
-              <!-- Three columns image repeater end -->
-              <!-- footer bar start -->
-              <tr>
-                <td>
+                                      </div>                                 
+                                    </td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </th>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </layout>
+                    <!-- Three columns image repeater end -->
+                  </repeater>
+                  <!-- footer bar start -->
                   <table class="row" id="footer-bar">
                     <tbody>
                       <tr> 
@@ -853,7 +726,7 @@
                               <td>
                                 <table>
                                   <tr>
-                                    <th class="menu-item"><preferences>Edit your subscription</preferences> |  <unsubscribe>Unsubscribe Instantly</unsubscribe></a>
+                                    <th class="menu-item"><preferences>Edit your subscription</preferences><span class="pipe">|</span><unsubscribe>Unsubscribe Instantly</unsubscribe></a>
                                     </th>
                                   </tr>
                                 </table>
@@ -864,9 +737,9 @@
                       </tr>
                     </tbody>
                   </table>
-                </td>
+                  <!-- footer bar end -->
+                </td><!-- closing td for main content area -->
               </tr>
-              <!-- footer bar end -->
             </tbody>
           </table><!-- closing container table -->
         </center>
