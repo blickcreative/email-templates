@@ -61,21 +61,21 @@ th.large-12.horizontal-rule {
         padding-bottom: 0;
         padding-right: 0;
 
-        a {
+        a, tweet, forwardtoafriend {
             display: inline-block;
-            margin-left: 10px;
+            padding-left: 10px;
         }
     }
-}
 
-@media only screen and (max-width: 596px) {
-    #top-bar { 
-/*         th.small-12 {
+    .pipe {
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+
+    @media only screen and (max-width: 596px) {
+        .first {
             padding-bottom: 0!important;
-            th.menu-item {
-                 padding-top: 0!important;
-            }
-        } */
+        }
     }
 }
 
