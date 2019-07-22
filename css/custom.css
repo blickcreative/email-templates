@@ -90,7 +90,7 @@ table.button {
     color: #7ED321;
     font-family: Helvetica, Arial, sans-serif;
     font-size: 16px;
-    font-weight: bold;
+    font-weight: 500;
     letter-spacing: -.5px;
     line-height: 150%;
     padding-top: 0px;
@@ -98,6 +98,8 @@ table.button {
     text-align: center;
     padding-bottom: 0px;
     padding-left: 0px; }
+    .blick-btn td .tpl-content {
+      padding: 0; }
     .blick-btn td a {
       text-align: center;
       color: #7ED321;
@@ -108,4 +110,5 @@ table.button {
       padding-left: 0;
       padding-right: 0;
       padding-top: 15px;
-      padding-bottom: 15px; }
+      padding-bottom: 15px;
+      font-weight: 500; }
