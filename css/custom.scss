@@ -89,3 +89,35 @@ th.large-12.horizontal-rule {
         }
     }
 }
+
+.blick-btn {
+    background-color: #fff;
+    border: 2px solid $lime;
+
+    td {
+        color: $lime;
+        font-family: Helvetica, Arial, sans-serif;
+        font-size: 16px;
+        font-weight: bold;
+        letter-spacing: -.5px;
+        line-height: 150%;
+        padding-top: 0px;
+        padding-right: 0px;
+        text-align: center;
+        padding-bottom: 0px;
+        padding-left: 0px;
+
+        a {
+            text-align: center;
+            color: $lime;
+            display: inline-block;
+            width: 100%;
+            margin: auto;
+            text-decoration: none;
+            padding-left: 0;
+            padding-right: 0;
+            padding-top: 15px;
+            padding-bottom: 15px;
+        }
+    }
+}
