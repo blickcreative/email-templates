@@ -82,3 +82,30 @@ table.button {
     table.button td table td a:hover {
       color: #7ED321;
       text-decoration: underline; }
+
+.blick-btn {
+  background-color: #fff;
+  border: 2px solid #7ED321; }
+  .blick-btn td {
+    color: #7ED321;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: -.5px;
+    line-height: 150%;
+    padding-top: 0px;
+    padding-right: 0px;
+    text-align: center;
+    padding-bottom: 0px;
+    padding-left: 0px; }
+    .blick-btn td a {
+      text-align: center;
+      color: #7ED321;
+      display: inline-block;
+      width: 100%;
+      margin: auto;
+      text-decoration: none;
+      padding-left: 0;
+      padding-right: 0;
+      padding-top: 15px;
+      padding-bottom: 15px; }
