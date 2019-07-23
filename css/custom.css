@@ -30,32 +30,38 @@ th.large-12.horizontal-rule {
   border-left-style: solid;
   border-right-style: solid; }
 
-#footer-bar,
+#footer-bar-1,
 #top-bar {
   background-color: #7ED321; }
-  #footer-bar .menu-item, #footer-bar .menu-item a,
+  #footer-bar-1 .menu-item, #footer-bar-1 .menu-item a,
   #top-bar .menu-item,
   #top-bar .menu-item a {
     color: #ffffff;
     font-size: 10px; }
-  #footer-bar #top-socials,
+  #footer-bar-1 #top-socials,
   #top-bar #top-socials {
     padding-bottom: 0;
     padding-right: 0; }
-    #footer-bar #top-socials a, #footer-bar #top-socials tweet, #footer-bar #top-socials forwardtoafriend,
+    #footer-bar-1 #top-socials a, #footer-bar-1 #top-socials tweet, #footer-bar-1 #top-socials forwardtoafriend,
     #top-bar #top-socials a,
     #top-bar #top-socials tweet,
     #top-bar #top-socials forwardtoafriend {
       display: inline-block;
       padding-left: 10px; }
-  #footer-bar .pipe,
+  #footer-bar-1 .pipe,
   #top-bar .pipe {
     padding-left: 5px;
     padding-right: 5px; }
   @media only screen and (max-width: 596px) {
-    #footer-bar .first,
+    #footer-bar-1 .first,
     #top-bar .first {
       padding-bottom: 0 !important; } }
+
+#footer-bar-2 p.account-links-container {
+  text-align: center;
+  color: #7ED321; }
+  #footer-bar-2 p.account-links-container a {
+    color: #7ED321; }
 
 .three-column-content .editable-content .heading-brand {
   font-size: 14px; }

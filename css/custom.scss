@@ -47,7 +47,7 @@ th.large-12.horizontal-rule {
     border-right-style:solid;
 }
 
-#footer-bar,
+#footer-bar-1,
 #top-bar {
     background-color: $lime;
 
@@ -75,6 +75,17 @@ th.large-12.horizontal-rule {
     @media only screen and (max-width: 596px) {
         .first {
             padding-bottom: 0!important;
+        }
+    }
+}
+
+#footer-bar-2 {
+    p.account-links-container {
+        text-align: center;
+        color: $lime;
+
+        a {
+            color: $lime;
         }
     }
 }
